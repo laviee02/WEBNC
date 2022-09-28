@@ -15,50 +15,49 @@
     <input id="tab-2" type="radio" name="tab" class="sign-up">
     <label for="tab-2" class="tab">Sign Up</label>
     <div class="login-form">
-      <form method='POST'>
+      <form action='login.php' method='POST'>
       <div class="sign-in-htm">
         <div class="group">
-          <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input">
+          <label for="username" class="label" >Username</label>
+          <input id="username" type="text" class="input" name ="username">
         </div>
         <div class="group">
-          <label for="pass" class="label">Password</label>
-          <input id="pass" type="password" class="input" data-type="password">
+          <label for="password" class="label" >Password</label>
+          <input id="password" type="password" class="input" data-type="password" name ="password">
         </div>
         </br>
         <div class="group">
           <input type="submit" class="button" name="dangnhap" value="Sign In">
         </div>
         <div class="hr"></div>
-        <div class="foot-lnk">
-          <a href="#forgot">Forgot Password?</a>
-        </div>
       </div>
+      <?php require 'xuly.php';?>
+      <form>
+      <form action='login.php' method='POST'>
       <div class="sign-up-htm">
         <div class="group">
-          <label for="user" class="label">Username</label>
-          <input id="user" type="text" class="input">
+          <label for="username" class="label">Username</label>
+          <input id="username" type="text" class="input" name="username">
         </div>
         <div class="group">
-          <label for="pass" class="label">Password</label>
-          <input id="pass" type="password" class="input" data-type="password">
+          <label for="password" class="label">Password</label>
+          <input id="password" type="password" class="input" data-type="password" name ="password">
         </div>
         <div class="group">
-          <label for="pass" class="label">Phone</label>
-          <input id="pass" type="text" class="input" data-type="input">
+          <label for="password" class="label">Phone</label>
+          <input id="password" type="text" class="input" data-type="input" name="phone">
         </div>
         <div class="group">
-          <label for="pass" class="label">Email Address</label>
-          <input id="pass" type="text" class="input">
+          <label for="password" class="label">Email Address</label>
+          <input id="password" type="text" class="input" name="email">
         </div>
         <div class="group">
-          <input type="submit" class="button" value="Sign Up">
+          <input type="submit" class="button" value="Sign Up" name="signup">
         </div>
         <div class="hr"></div>
-        <div class="foot-lnk">
-          <label for="tab-1">Already Member?</a>
-        </div>
       </div>
+      <?php require 'xulysignup.php';?>
+      <form>
     </div>
   </div>
 </div>

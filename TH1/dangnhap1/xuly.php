@@ -15,7 +15,6 @@ $password = addslashes($_POST['password']);
   
 //Kiểm tra đã nhập đủ tên đăng nhập với mật khẩu chưa
 if (!$username || !$password) {
-echo " <br />";
 echo "Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu. <a href='javascript: history.go(-1)'>Trở lại</a>";
 exit;
 }
@@ -42,10 +41,10 @@ if ($password != $row['password']) {
 echo "Mật khẩu không đúng. Vui lòng nhập lại. <a href='javascript: history.go(-1)'>Trở lại</a>";
 exit;
 }
-
+  
 //Lưu tên đăng nhập
 $_SESSION['username'] = $username;
-echo "<br />Xin chào <b>" .$username . "</b>. Bạn đã đăng nhập thành công. <a href=''>Thoát</a>";
+echo "Xin chào <b>" .$username . "</b>. Bạn đã đăng nhập thành công. <a href=''>Thoát</a>";
 die();
 $connect->close();
 }
